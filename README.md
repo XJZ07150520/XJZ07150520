@@ -1,10 +1,20 @@
-# Learning in public: EV platforms, V2H/V2G, and AI power systems
+# Learning in public: power electronics, controls, EV energy, and AI power
 
-I’m exploring how vehicles and other battery systems can exchange energy while still meeting their original tasks. I’m early in learning this area, and I’d appreciate corrections from people working on EVs, charging, power electronics, storage, and energy systems.
+I’m learning about power electronics, controls, electric drives, and energy systems. I’m exploring how vehicles, storage, AI computing loads, and other electrical systems can exchange and manage energy while still meeting their original tasks. I’m early in learning this area, and I’d appreciate corrections from people working on EVs, charging, power electronics, storage, and energy systems.
 
 This is a concept note and a request for feedback. I have not built a prototype or run the proposed experiments. I’m especially interested in learning which parts are already standard practice and where a small, reproducible study could still be useful.
 
 **Feedback / 交流：** [Share a correction, paper, dataset, or starting-problem suggestion](https://github.com/XJZ07150520/XJZ07150520/issues/1). English and 中文 are both welcome.
+
+## Electrical engineering research / 电气研究与论文
+
+**[Read the eight-paper map and proposed experiments / 阅读论文地图与拟研究课题](https://github.com/XJZ07150520/XJZ07150520/blob/main/docs/electrical-research.md)**
+
+My proposed electrical starting point is **DC-bus regulation and energy buffering under power, energy, and reserve constraints**. The reading map covers converter and microgrid control, bidirectional DC/DC, safe learning-based control, AI power measurements and architectures, EV coordination, and electric drives.
+
+The first comparison would be a well-tuned PI controller, load feedforward, constrained MPC, and the same MPC with a learned forecast. I’d like to learn what should be reproduced first, what is already solved, and which electrical constraints are missing. The page includes physical calculations, an experiment matrix, publication/preprint distinctions, and data-resolution limits. **No proposed experiment has been run.**
+
+电气主线是电力电子、控制、电机与能源系统；EV、AI 供电和具身智能是可以逐步连接的应用。上面的独立页面列出八篇论文、六条研究线和一个建议先做的具体课题。
 
 ## 1. Utility EV platforms: what should be reusable?
 
@@ -41,7 +51,7 @@ flowchart TD
 
 This is a modeling question, not a claim that a privately owned EV can replace a data center UPS.
 
-A possible first study would use **one EV, a home load, and stationary storage**, compare fixed reserve thresholds with state-dependent constraints, and test early departure, prediction error, and disconnection. I would first check how existing EMS, DERMS, VPP, and vehicle-grid research already handle these cases.
+A complementary, slower-timescale energy-management study would use **one EV, a home load, and stationary storage**, compare fixed reserve thresholds with state-dependent constraints, and test early departure, prediction error, and disconnection. I would first check how existing EMS, DERMS, VPP, and vehicle-grid research already handle these cases.
 
 **Would that be a useful starting problem? If not, what smaller question would you suggest?** Feedback pointing out a wrong assumption, an existing solution, a public dataset, or a useful paper would be particularly helpful.
 
